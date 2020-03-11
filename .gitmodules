@@ -1,0 +1,3 @@
+[submodule "subModules/Bidding"]
+	path = subModules/Bidding
+	url = https://github.com/a-m-dev/subModule_child.git
