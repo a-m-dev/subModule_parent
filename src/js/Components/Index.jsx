@@ -5,6 +5,10 @@ import Home from './Home/Home'
 // import Routes from './Routes/Routes'
 // import CONTXT from './Context/Context'
 
+// get route from child 
+import TestComponent from '../../../subModules/Bidding/src/js/Components/globalComponents/TestComponent/TestComponent'
+// import test from '../../../subModules/Bidding/src/utils/func'
+
 import Nav from './_shared/Nav/Nav'
 
 import Img from '../../img/react.png';
@@ -15,7 +19,7 @@ import Img from '../../img/react.png';
 export default class Index extends Component {
 
   componentDidMount() {
-    document.title = "Hi there"
+    // document.title = "Hi there"
   }
   
   click = e => {
@@ -24,6 +28,9 @@ export default class Index extends Component {
   
 
   render() {
+
+    // console.log(test)
+
     return (
       <article>
 
@@ -31,6 +38,7 @@ export default class Index extends Component {
         <main>
           <Switch>
             <Route path='/' exact component={Home} />
+            <Route path='/componentFromChildProject' component={TestComponent} />
             {/* <Route path='/routes' component={Routes} />
             <Route path='/context' component={CONTXT} /> */}
           </Switch>

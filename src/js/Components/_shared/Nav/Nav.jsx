@@ -38,6 +38,16 @@ class Nav extends React.Component {
           activeStyle={{ fontWeight: 'bold' }}>
             Context
         </NavLink>
+
+        <span className="nav__seperator">||</span>
+        
+        <NavLink 
+          to='/componentFromChildProject' 
+          className='nav__link'
+          activeStyle={{ fontWeight: 'bold' }}>
+            componentFromChildProject
+        </NavLink>
+
       </nav>
     )
   }
